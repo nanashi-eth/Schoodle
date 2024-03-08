@@ -1,15 +1,21 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="java.util.*, com.nanashi.moodle.dao.AlumnoDAO, com.nanashi.moodle.dao.TareaDAO, com.nanashi.moodle.pojos.Alumno, com.nanashi.moodle.pojos.Tarea" %>
+<%@ page import="java.util.*, java.time.*, java.time.temporal.ChronoUnit, com.nanashi.moodle.dao.AlumnoDAO, com.nanashi.moodle.dao.TareaDAO, com.nanashi.moodle.pojos.Alumno, com.nanashi.moodle.pojos.Tarea" %>
 <%
+    response.setHeader("Cache-Control", "no-store");
     // Verificar si el usuario ha iniciado sesión
     String usuario = (String) session.getAttribute("usuario");
-    if (usuario == null) {
-        response.sendRedirect("login.jsp"); // Redirigir al usuario a la página de inicio de sesión si no ha iniciado sesión
+    if (usuario == null || usuario.isEmpty()) {
+        response.sendRedirect("index.jsp");
     }
 
     // Obtener el alumno actual
     AlumnoDAO alumnoDAO = new AlumnoDAO();
     Alumno alumno = alumnoDAO.obtenerAlumnoPorId((String) session.getAttribute("id"));
+
+    // Calcular la edad del usuario
+    LocalDate fechaNacimiento = alumno.getFechaNacimiento();
+    LocalDate fechaActual = LocalDate.now();
+    long edad = ChronoUnit.YEARS.between(fechaNacimiento, fechaActual);
 
     // Obtener el número de tareas pendientes y completadas
     TareaDAO tareaDAO = new TareaDAO();
@@ -25,11 +31,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Material Design Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="container">
@@ -41,6 +43,7 @@
             <h5 class="card-title">Datos del usuario</h5>
             <p class="card-text">Nombre: <%= alumno.getNombre() %></p>
             <p class="card-text">Email: <%= alumno.getEmail() %></p>
+            <p class="card-text">Edad: <%= edad %> años</p>
         </div>
     </div>
     <hr>
@@ -57,12 +60,17 @@
         <div class="col-md-6">
             <h3>Acceso a tus tareas:</h3>
             <ul>
-                <li><a href="tareas?vista=lista">Tabla</a></li>
-                <li><a href="pagina2.jsp">Lista</a></li>
+                <li><a href="tareas?vista=tabla">Tabla</a></li>
+                <li><a href="tareas?vista=lista">Lista</a></li>
             </ul>
         </div>
     </div>
 </div>
+<hr>
+
+<footer>
+    <a href="logout" class="btn btn-primary">Cerrar sesion</a>
+</footer>
 
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

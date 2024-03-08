@@ -8,21 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Material Design Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <style>
-    body {
-      padding: 20px;
-    }
-    .form-container {
-      max-width: 400px;
-      margin: auto;
-    }
-    .form-group {
-      margin-bottom: 20px;
-    }
-    .error-message {
-      color: red;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="container">
@@ -47,35 +33,6 @@
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $('#loginForm').submit(function(event) {
-      var identificador = $('#identificador').val();
-      var contrasena = $('#contrasena').val();
-      var isValid = true;
-
-      // Validación de identificador
-      var identificadorRegex = /^[A-Z]{3}\d{3}$/; // Expresión regular para 3 letras mayúsculas seguidas de 3 números
-      if (!identificadorRegex.test(identificador)) {
-        $('#identificadorError').text('El identificador debe tener 3 letras mayúsculas seguidas de 3 números (Ejemplo: ABC123)');
-        isValid = false;
-      } else {
-        $('#identificadorError').text('');
-      }
-
-      // Validación de contraseña
-      if (contrasena.trim() == '') {
-        $('#contrasenaError').text('Ingrese su contraseña');
-        isValid = false;
-      } else {
-        $('#contrasenaError').text('');
-      }
-
-      if (!isValid) {
-        event.preventDefault(); // Evitar envío del formulario si hay errores
-      }
-    });
-  });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>

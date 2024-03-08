@@ -8,21 +8,22 @@ import java.time.LocalDate;
 @Table(name = "Alumno")
 public class Alumno {
     @Id
+    @Column(name = "id")
     private String id;
 
-    @Column(nullable = false)
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column(nullable = false)
+    @Column(name = "apellido")
     private String apellido;
 
-    @Column(nullable = false, unique = true)
+    @Column(name = "email", unique = true)
     private String email;
 
-    @Column(name = "fecha_nacimiento", nullable = false)
+    @Column(name = "fecha_nacimiento")
     private LocalDate fechaNacimiento;
 
-    @Column(nullable = false)
+    @Column(name = "contrasena")
     private String contrasena;
 
     public String getId() {

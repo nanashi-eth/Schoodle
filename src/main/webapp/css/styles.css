@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+    font-family: Roboto, sans-serif;
+    padding: 20px;
+    background-color: #292d3e;
+    color: #abb2bf;
+}
+
+
+.container {
+    margin-top: 50px;
+}
+
+p {
+    color: #abb2bf;
+}
+
+a {
+    color: #bd93f9;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: #ff5370;
+}
+
+.task {
+    margin-bottom: 20px;
+}
+
+.even-row {
+    background-color: #44475a;
+}
+
+.odd-row {
+    background-color: #3e4452;
+}
+
+tbody tr:hover {
+    background-color: #6272a4;
+}
+table td{
+    color: aliceblue;
+}
+table th{
+    color: aliceblue;
+}
+
+/* Estilos específicos */
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    margin-bottom: 20px;
+    background-color: #44475a;
+    color: #abb2bf;
+}
+
+.header {
+    margin-top: 50px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+.btn-primary {
+    background-color: #bd93f9;
+    border-color: #bd93f9;
+}
+
+.btn-primary:hover {
+    background-color: #6272a4;
+    border-color: #6272a4;
+}
+
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(189, 147, 249, 0.5);
+}
+
+.form-container {
+    max-width: 400px;
+    margin: auto;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.error-message {
+    color: red;
+}

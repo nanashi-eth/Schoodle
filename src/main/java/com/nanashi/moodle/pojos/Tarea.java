@@ -5,33 +5,39 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "Tareas")
 public class Tarea {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
-    @Column(nullable = false)
+    @Column(name = "titulo")
     private String titulo;
 
+    @Column(name = "descripcion")
     private String descripcion;
 
-    @Column(nullable = false)
+    @Column(name = "fecha_entrega")
     private LocalDate fechaEntrega;
 
-    @Column(nullable = false)
-    private boolean completado;
+    @Column(name = "completado")
+    private int completado;
 
+    @Column(name = "calificacion")
     private Integer calificacion;
+
+    @Column(name = "imagen")
+    private String imagen;
 
     @ManyToOne
     @JoinColumn(name = "id_alumno")
     private Alumno alumno;
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -59,11 +65,11 @@ public class Tarea {
         this.fechaEntrega = fechaEntrega;
     }
 
-    public boolean isCompletado() {
+    public int getCompletadoo() {
         return completado;
     }
 
-    public void setCompletado(boolean completado) {
+    public void setCompletado(int completado) {
         this.completado = completado;
     }
 
@@ -81,6 +87,14 @@ public class Tarea {
 
     public void setAlumno(Alumno alumno) {
         this.alumno = alumno;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 }
 

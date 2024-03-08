@@ -9,7 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2742f313-8ad0-4ab9-a862-6f99b7c2d1b7" name="Changes" comment="" />
+    <list default="true" id="2742f313-8ad0-4ab9-a862-6f99b7c2d1b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/servlets/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/detalleTarea.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/tabla.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e870dec9-3e80-46f3-9ee0-2b1ef0b41f67.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e870dec9-3e80-46f3-9ee0-2b1ef0b41f67.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e870dec9-3e80-46f3-9ee0-2b1ef0b41f67/storage_v2/_src_/schema/psp10.rDlgBg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e870dec9-3e80-46f3-9ee0-2b1ef0b41f67/storage_v2/_src_/schema/psp10.rDlgBg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/dao/TareaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/dao/TareaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/pojos/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/pojos/Alumno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/pojos/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/pojos/Tarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/lista.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lista.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,10 +36,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
@@ -44,6 +65,7 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2dOx2WClO87uaqWQUJ3tm2CMaFL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -57,7 +79,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "last_opened_file_path": "S:/Documents/IntelliJ Projects/Moodle/src/main/webapp/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +95,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="S:\Documents\IntelliJ Projects\Moodle\src\main\webapp\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="S:\Documents\IntelliJ Projects\Moodle\src\main\java\com\nanashi\moodle\pojos" />
       <recent name="S:\Documents\IntelliJ Projects\Moodle\src\main\resources" />
@@ -174,11 +202,25 @@
       <option name="presentableId" value="Default" />
       <updated>1709892721656</updated>
       <workItem from="1709892723561" duration="7132000" />
-      <workItem from="1709899908955" duration="4036000" />
+      <workItem from="1709899908955" duration="4130000" />
+      <workItem from="1709906996025" duration="7061000" />
     </task>
+    <task id="LOCAL-00001" summary="asd">
+      <option name="closed" value="true" />
+      <created>1709904043446</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709904043447</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asd" />
+    <option name="LAST_COMMIT_MESSAGE" value="asd" />
   </component>
 </project>

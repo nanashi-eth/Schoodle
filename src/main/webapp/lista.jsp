@@ -1,6 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.nanashi.moodle.pojos.Tarea" %>
+<% response.setHeader("Cache-Control", "no-store");
+    // Verificar si el usuario ha iniciado sesión
+    String usuario = (String) session.getAttribute("usuario");
+    if (usuario == null) {
+        response.sendRedirect("index.jsp");
+    }
+    List<Tarea> tareasCompletadas = (List<Tarea>) request.getAttribute("tareasCompletadas");
+    if (tareasCompletadas == null && tareasCompletadas.isEmpty()) {
+        response.sendRedirect("home.jsp");
+    }
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +22,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Material Design Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        /* Agrega estilos adicionales según sea necesario */
-        .task {
-            margin-bottom: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="container">
@@ -27,11 +33,10 @@
             <h3>Tareas Completadas</h3>
             <hr>
             <%
-                List<Tarea> tareasCompletadas = (List<Tarea>) request.getAttribute("tareasCompletadas");
                 for (Tarea tarea : tareasCompletadas) {
             %>
             <div class="task card">
-                <img src="ruta/a/imagen/<%= tarea.getId() %>.jpg" alt="Imagen de la tarea" class="card-img-top">
+                <img src="images/<%= tarea.getImagen() %>" alt="Imagen de la tarea" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title"><%= tarea.getTitulo() %></h5>
                     <p class="card-text"><%= tarea.getDescripcion() %></p>
@@ -49,7 +54,7 @@
                 for (Tarea tarea : tareasPendientes) {
             %>
             <div class="task card">
-                <img src="ruta/a/imagen/<%= tarea.getId() %>.jpg" alt="Imagen de la tarea" class="card-img-top">
+                <img src="images/<%= tarea.getImagen() %>" alt="Imagen de la tarea" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title"><%= tarea.getTitulo() %></h5>
                     <p class="card-text"><%= tarea.getDescripcion() %></p>
@@ -61,6 +66,11 @@
         </div>
     </div>
 </div>
+<hr>
+
+<footer>
+    <a href="logout" class="btn btn-primary">Cerrar sesion</a>
+</footer>
 
 <!-- Bootstrap JS and jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
