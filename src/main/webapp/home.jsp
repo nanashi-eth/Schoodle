@@ -7,21 +7,23 @@
     if (usuario == null || usuario.isEmpty()) {
         response.sendRedirect("index.jsp");
     }
+    else {
+        // Obtener el alumno actual
+        AlumnoDAO alumnoDAO = new AlumnoDAO();
+        Alumno alumno = alumnoDAO.obtenerAlumnoPorId((String) session.getAttribute("id"));
 
-    // Obtener el alumno actual
-    AlumnoDAO alumnoDAO = new AlumnoDAO();
-    Alumno alumno = alumnoDAO.obtenerAlumnoPorId((String) session.getAttribute("id"));
+        // Calcular la edad del usuario
+        LocalDate fechaNacimiento = alumno.getFechaNacimiento();
+        LocalDate fechaActual = LocalDate.now();
+        long edad = ChronoUnit.YEARS.between(fechaNacimiento, fechaActual);
 
-    // Calcular la edad del usuario
-    LocalDate fechaNacimiento = alumno.getFechaNacimiento();
-    LocalDate fechaActual = LocalDate.now();
-    long edad = ChronoUnit.YEARS.between(fechaNacimiento, fechaActual);
-
-    // Obtener el número de tareas pendientes y completadas
-    TareaDAO tareaDAO = new TareaDAO();
-    List<Tarea> tareasPendientes = tareaDAO.obtenerTareasPendientes(alumno);
-    List<Tarea> tareasCompletadas = tareaDAO.obtenerTareasCompletadas(alumno);
+        // Obtener el número de tareas pendientes y completadas
+        TareaDAO tareaDAO = new TareaDAO();
+        List<Tarea> tareasPendientes = tareaDAO.obtenerTareasPendientes(alumno);
+        List<Tarea> tareasCompletadas = tareaDAO.obtenerTareasCompletadas(alumno);
 %>
+
+    }
 <!DOCTYPE html>
 <html>
 <head>
@@ -69,7 +71,13 @@
 <hr>
 
 <footer>
-    <a href="logout" class="btn btn-primary">Cerrar sesion</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="logout" class="btn btn-primary">Cerrar sesion</a>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- Bootstrap JS and jQuery -->
@@ -77,3 +85,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+<% }%>
+    
+

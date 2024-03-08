@@ -7,10 +7,11 @@
     if (usuario == null) {
         response.sendRedirect("index.jsp");
     }
-    List<Tarea> tareasCompletadas = (List<Tarea>) request.getAttribute("tareasCompletadas");
-    if (tareasCompletadas == null && tareasCompletadas.isEmpty()) {
+    else if ((List<Tarea>) request.getAttribute("tareasCompletadas") == null && ((List<Tarea>) request.getAttribute("tareasCompletadas")).isEmpty()) {
         response.sendRedirect("home.jsp");
     }
+    else{
+        List<Tarea> tareasCompletadas = (List<Tarea>) request.getAttribute("tareasCompletadas");
 %>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,9 +68,14 @@
     </div>
 </div>
 <hr>
-
 <footer>
-    <a href="logout" class="btn btn-primary">Cerrar sesion</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="logout" class="btn btn-primary">Cerrar sesion</a>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- Bootstrap JS and jQuery -->
@@ -77,3 +83,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+<%}%>

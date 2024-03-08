@@ -6,7 +6,7 @@
     String usuario = (String) session.getAttribute("usuario");
     if (usuario == null) {
         response.sendRedirect("index.jsp");
-    } %>
+    } else { %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +58,13 @@
 <hr>
 
 <footer>
-    <a href="logout" class="btn btn-primary">Cerrar sesion</a>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="logout" class="btn btn-primary">Cerrar sesion</a>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- Bootstrap JS and jQuery -->
@@ -66,3 +72,4 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+<%}%>

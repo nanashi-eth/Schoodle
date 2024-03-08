@@ -10,23 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2742f313-8ad0-4ab9-a862-6f99b7c2d1b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/servlets/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/detalleTarea.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/tabla.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e870dec9-3e80-46f3-9ee0-2b1ef0b41f67.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e870dec9-3e80-46f3-9ee0-2b1ef0b41f67.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e870dec9-3e80-46f3-9ee0-2b1ef0b41f67/storage_v2/_src_/schema/psp10.rDlgBg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e870dec9-3e80-46f3-9ee0-2b1ef0b41f67/storage_v2/_src_/schema/psp10.rDlgBg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/dao/TareaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/dao/TareaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/pojos/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/pojos/Alumno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/pojos/Tarea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/pojos/Tarea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/servlets/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/detalleTarea.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detalleTarea.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/lista.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lista.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,30 +63,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_opened_file_path": "S:/Documents/IntelliJ Projects/Moodle/src/main/webapp/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.applicationServers",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;S:/Documents/IntelliJ Projects/Moodle/src/main/webapp/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.applicationServers&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="S:\Documents\IntelliJ Projects\Moodle\src\main\webapp\images" />
@@ -203,7 +196,9 @@
       <updated>1709892721656</updated>
       <workItem from="1709892723561" duration="7132000" />
       <workItem from="1709899908955" duration="4130000" />
-      <workItem from="1709906996025" duration="7061000" />
+      <workItem from="1709906996025" duration="7078000" />
+      <workItem from="1709916353156" duration="876000" />
+      <workItem from="1709917462269" duration="1500000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <option name="closed" value="true" />
@@ -213,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709904043447</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adasdadada">
+      <option name="closed" value="true" />
+      <created>1709914082373</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709914082373</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +224,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asd" />
-    <option name="LAST_COMMIT_MESSAGE" value="asd" />
+    <MESSAGE value="adasdadada" />
+    <option name="LAST_COMMIT_MESSAGE" value="adasdadada" />
   </component>
 </project>

@@ -17,6 +17,7 @@ public class LogoutServlet extends HttpServlet {
         HttpSession session = request.getSession(false); // false para evitar la creación de una nueva sesión si no existe
 
         if (session != null) {
+            session.removeAttribute("usuario");
             session.invalidate(); // Invalida la sesión actual
         }
 

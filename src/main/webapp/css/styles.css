@@ -41,7 +41,7 @@ a {
 }
 
 .odd-row {
-    background-color: #3e4452;
+    background-color: #45575a;
 }
 
 tbody tr:hover {
@@ -97,3 +97,4 @@ table th{
 .error-message {
     color: red;
 }
+
