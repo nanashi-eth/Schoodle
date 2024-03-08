@@ -44,7 +44,6 @@ public class TareasServlet extends HttpServlet {
         }
 
         // Redirigir a la página correspondiente según el valor de 'vista'
-        // Redirigir a la página correspondiente según el valor de 'vista'
         if (vista.equals("lista")) {
             request.setAttribute("tareasCompletadas", tareasCompletadas);
             request.setAttribute("tareasPendientes", tareasPendientes);

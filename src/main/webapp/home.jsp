@@ -22,8 +22,6 @@
         List<Tarea> tareasPendientes = tareaDAO.obtenerTareasPendientes(alumno);
         List<Tarea> tareasCompletadas = tareaDAO.obtenerTareasCompletadas(alumno);
 %>
-
-    }
 <!DOCTYPE html>
 <html>
 <head>

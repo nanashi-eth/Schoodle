@@ -30,7 +30,7 @@
     <h2>Lista de Tareas</h2>
     <hr>
     <div class="row">
-        <div class="col-md-6">
+        <section class="col-md-6">
             <h3>Tareas Completadas</h3>
             <hr>
             <%
@@ -41,13 +41,12 @@
                 <div class="card-body">
                     <h5 class="card-title"><%= tarea.getTitulo() %></h5>
                     <p class="card-text"><%= tarea.getDescripcion() %></p>
-                    <p class="card-text">Fecha de Entrega: <%= tarea.getFechaEntrega() %></p>
                     <a href="detalleTarea.jsp?id=<%= tarea.getId() %>" class="btn btn-primary">Ver Detalles</a>
                 </div>
             </div>
             <% } %>
-        </div>
-        <div class="col-md-6">
+        </section>
+        <section class="col-md-6">
             <h3>Tareas Pendientes</h3>
             <hr>
             <%
@@ -64,7 +63,7 @@
                 </div>
             </div>
             <% } %>
-        </div>
+        </section>
     </div>
 </div>
 <hr>

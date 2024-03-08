@@ -10,16 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2742f313-8ad0-4ab9-a862-6f99b7c2d1b7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e870dec9-3e80-46f3-9ee0-2b1ef0b41f67.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e870dec9-3e80-46f3-9ee0-2b1ef0b41f67.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/servlets/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/servlets/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/detalleTarea.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/detalleTarea.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/servlets/TareasServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nanashi/moodle/servlets/TareasServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/lista.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lista.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tabla.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tabla.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +192,9 @@
       <workItem from="1709899908955" duration="4130000" />
       <workItem from="1709906996025" duration="7078000" />
       <workItem from="1709916353156" duration="876000" />
-      <workItem from="1709917462269" duration="1500000" />
+      <workItem from="1709917462269" duration="1556000" />
+      <workItem from="1709934628960" duration="2204000" />
+      <workItem from="1709936892228" duration="1084000" />
     </task>
     <task id="LOCAL-00001" summary="asd">
       <option name="closed" value="true" />
@@ -216,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709914082373</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="weqweqweqweqweq">
+      <option name="closed" value="true" />
+      <created>1709919017657</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709919017657</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +229,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="asd" />
     <MESSAGE value="adasdadada" />
-    <option name="LAST_COMMIT_MESSAGE" value="adasdadada" />
+    <MESSAGE value="weqweqweqweqweq" />
+    <option name="LAST_COMMIT_MESSAGE" value="weqweqweqweqweq" />
   </component>
 </project>
